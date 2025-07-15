@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo da Velha - Temas</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Seleção de Tema -->
+  <div>
+    <label for="theme">Escolha o Tema:</label>
+    <select id="theme">
+      <option value="default">Padrão (X / O)</option>
+      <option value="superhero">Super-Heróis</option>
+      <option value="animals">Animais</option>
+      <option value="emoji">Emojis</option>
+    </select>
+  </div>
+
+  <!-- Opções de animal -->
+  <div id="animal-options" style="display:none;">
+    <label for="animal">Escolha o Animal:</label>
+    <select id="animal">
+      <option value="cat">Gato</option>
+      <option value="dog">Cachorro</option>
+    </select>
+  </div>
+
+  <!-- Opções de super-herói -->
+  <div id="superhero-options" style="display:none;">
+    <label for="hero">Escolha o Herói:</label>
+    <select id="hero">
+      <option value="superman">Superman</option>
+      <option value="batman">Batman</option>
+      <option value="wonderwoman">Mulher-Maravilha</option>
+      <option value="spiderman">Homem-Aranha</option>
+    </select>
+  </div>
+
+  <!-- Tabuleiro -->
+  <div class="game-board" id="board">
+    <div class="cell" data-cell></div><div class="cell" data-cell></div><div class="cell" data-cell></div>
+    <div class="cell" data-cell></div><div class="cell" data-cell></div><div class="cell" data-cell></div>
+    <div class="cell" data-cell></div><div class="cell" data-cell></div><div class="cell" data-cell></div>
+  </div>
+
+  <button id="restartBtn">Reiniciar</button>
+  <p id="message" class="message"></p>
+
+  <!-- Carta escondida -->
+  <div id="envelope-container" style="display: none;">
+    <section id="envelope-section">
+      <div class="wrapper">
+        <div class="lid one"></div>
+        <div class="lid two"></div>
+        <div class="envelope"></div>
+        <div class="letter">
+          <p>Entre páginas e histórias guardadas, o próximo passo está entre palavras encantadas.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <p class="creditos">&copy; Eduardo, Henrique, Joaquim e Juliane</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
